@@ -1,0 +1,13 @@
+<%= form_with model: @item, local: true do |form| %>
+  <div>
+    <%= form.label :nickname, "商品名" %>
+    <%= form.text_field :nickname, required: true %>
+  </div>
+  <div>
+    <%= form.label :price, "価格" %>
+    <%= form.number_field :price, value: 100, min: 1, required: true %>
+  </div>
+  <div>
+    <%= form.submit "送信" %>
+  </div>
+<% end %>
