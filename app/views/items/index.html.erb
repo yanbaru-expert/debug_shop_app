@@ -1,7 +1,7 @@
 <p><%= link_to "新規投稿", new_item_path %></p>
 <h1>投稿一覧ページ</h1>
 <article>
-  <% @item.each do |item| %>
+  <% @items.each do |item| %>
     <hr>
     <section>
       <p>商品名: <%= item.name %></p>
