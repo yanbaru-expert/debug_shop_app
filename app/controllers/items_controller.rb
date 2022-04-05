@@ -8,13 +8,13 @@ class ItemsController < ApplicationController
   end
 
   def create
-    Item.create!(item_params)
+    Item.create(item_params)
     redirect_to items_path
   end
 
   private
 
   def item_params
-    params.require(:items).permit(:name, :price)
+    params.require(:item).permit(:name, :price)
   end
 end
