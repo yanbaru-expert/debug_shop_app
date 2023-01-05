@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  resources :items, only: %i[index new create]
+  resources :items ,only: %i[index new create]
 end
